@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: rgb(147, 139, 139) !important;
+  margin-top: 50px;
+}
+.app {
+  width: 33rem;
+  background: #eee;
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+.wrap {
+  display: flex;
+  gap: 0 0rem;
+}
+.account {
+  color: green;
+  font-weight: bold;
+}
+.wrap.column {
+  flex-direction: column;
+  gap: 1rem 0;
+}
+.wrap.gap {
+  gap: 0 0.5rem;
+}
+.wrap.mt-3 {
+  margin-top: 3rem;
+}
+.wrap.space {
+  justify-content: space-between;
+}
+.form-control {
+  height: 5rem;
+  border: 1px solid rgb(125, 119, 119);
+  border-radius: 4px;
+  background: rgb(222, 217, 217);
+  gap: 0 1rem;
+  display: flex;
+}
+.wrap-icon {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgb(125, 119, 119);
+  justify-content: center;
+}
+.input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.date {
+  display: flex;
+  gap: 0 0.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+.day,
+.month,
+.year {
+  width: 4rem;
+  background: rgb(222, 217, 217);
+  height: 5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+input[name="gender"],
+input[name="payment"] {
+  display: none;
+}
+.gender {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.male,
+.female {
+  width: 6.5rem;
+  background: rgb(222, 217, 217);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.male {
+  border-right: 1px solid rgb(110, 109, 109);
+}
+
+.custom {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#male:checked + .custom,
+#female:checked + .custom {
+  background: green;
+  color: #fff;
+}
+
+.credit {
+  color: #fff;
+  height: 5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+.paypal {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+
+  background: rgb(222, 217, 217);
+}
+.payment-method {
+  display: flex;
+}
+#credit + div,
+#paypal + div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+  cursor: pointer;
+  color: rgb(147, 139, 139);
+}
+#credit:checked + div,
+#paypal:checked + div {
+  background: green;
+  color: #fff;
+}
+.wrap-date {
+  width: 12rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0 0.5rem;
+}
+.term {
+  margin-top: 3rem;
+  color: green;
+  font-weight: bold;
+}
+.term-paragraph {
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}

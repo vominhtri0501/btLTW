@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    const listStr = [
+      "Xin chao cac ban",
+      "Moi nguoi dao nay the nao roi?",
+      "Web page xin chao cac ban",
+      "NLU han hanh chao don cac sinh vien",
+      "Chung toi rat vui khi duoc gap ban",
+    ];
+    let index = Math.round(Math.random(listStr.length) * 10);
+
+    while (index > listStr.length - 1) {
+      index = Math.round(Math.random(listStr.length) * 10);
+    }
+    console.log(index);
+    document.body.innerText = listStr[index];
+  </script>
+</html>

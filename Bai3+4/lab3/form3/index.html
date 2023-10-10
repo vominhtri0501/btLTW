@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../reset.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <div class="form">
+      <div class="wrap column">
+        <p class="account">Account</p>
+        <div class="form-control">
+          <span class="wrap-icon"> <i class="fa-regular fa-user"></i> </span>
+          <input type="text" class="input fullname" required placeholder="Full name" />
+        </div>
+        <div class="form-control">
+          <span class="wrap-icon"> <i class="fa-regular fa-envelope"></i></span>
+          <input type="email" class="input email" required placeholder="Email address" />
+        </div>
+        <div class="form-control">
+          <span class="wrap-icon"> <i class="fa-solid fa-key"></i> </span>
+          <input type="password" class="input password" required placeholder="Password" />
+        </div>
+      </div>
+
+      <div class="wrap mt-3 column">
+      </div>
+
+      <div class="wrap space">
+        <div class="wrap column">
+          <p class="account">Date of Birth</p>
+
+          <div class="date">
+            <input type="text" class="day input" placeholder="DD" />
+            <input type="text" class="month input" placeholder="MM" />
+            <input type="text" class="year input" placeholder="YYYY" />
+          </div>
+        </div>
+        <div class="wrap column">
+          <p class="account">Gender</p>
+          <div class="gender">
+            <label class="male" >
+              
+              <input type="radio" name="gender" id="male" />
+              <label for="male" class="custom">
+                Male
+              </label>
+            </label>
+            <label class="female" > 
+              <input type="radio" name="gender" id="female" />
+              <label for="female" class="custom">
+                Female
+              </label>
+              
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap column mt-3">
+      <p class="account">Payment details</p>
+      <div class="payment-method">
+        <label class="credit" for="credit">
+          <input type="radio" name="payment" id="credit" value="credit" checked>
+          <div >
+            <i class="fa-brands fa-cc-visa"></i> Credit card
+          </div>
+
+        </label>
+        <label for="paypal" class="paypal">
+          <input type="radio" id="paypal" name="payment" value="paypal" >
+          <div>
+            <i class="fa-brands fa-cc-paypal"></i>
+            Paypal
+          </div>
+
+        </label>
+      </div>
+      <div class="form-control">
+        <span class="wrap-icon"> <i class="fa-regular fa-credit-card"></i>
+          </i> </span>
+        <input type="number" class="input card" required placeholder="Card Number" />
+      </div>
+      <div class="wrap gap">
+        <div class="form-control">
+          <span class="wrap-icon">
+            <i class="fa-regular fa-user"></i>
+          </span>
+          <input type="number" class="input cvc" required placeholder="Card Cvc" />
+        </div>
+        <div class="wrap-date">
+          01 Jan
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="wrap-date">
+          2015
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+      </div>
+    </div>
+    <p class="term">Term and Conditions</p>
+    <p class="term-paragraph">
+      <input type="checkbox" name="term" id="term">
+      I accept the terms and conditions for signing up this service, and hereby confirm i have read the privacy policy
+    </p>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+        gap: 10rem 0;
+      }
+      #img {
+        transition: all 2s linear;
+        width: 200px;
+        height: 200px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="photo-1660854003923-ed7bd08a5c47.avif" alt="img" id="img" />
+    <div class="wrap">
+      <button id="btn">Spin</button>
+    </div>
+  </body>
+
+  <script>
+    const img = document.getElementById("img");
+    const btn = document.getElementById("btn");
+    const btnPause = document.getElementById("btn-pause");
+    let deg = 15;
+    let idSet;
+    btn.onclick = () => {
+      img.style.transform = "rotate(15deg)";
+      btn.innerText = "Spinning...";
+      if (idSet) {
+        clearInterval(idSet);
+      }
+      idSet = setInterval(() => {
+        img.style.transform = `rotate(${deg}deg)`;
+        deg += 15;
+      }, 4000);
+    };
+  </script>
+</html>

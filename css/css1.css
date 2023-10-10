@@ -1,0 +1,40 @@
+#Container{
+    margin: auto;
+    width: 1203px;
+    border: 3px solid black  ;
+
+}
+header{
+    font-size: 30px;
+    background: gray;
+    height: 80px;
+    border: 3px solid black ;
+
+}
+#Container #Content{
+
+    height: 200px;
+
+
+}
+#Container #Content #left{
+    width: 150px;
+    float: left;
+    height: 200px;
+    background: #ffdf7e ;
+    border: 2px solid black  ;
+}
+#Container #Content #right{
+    width: 1047px;
+    float: right;
+    height: 200px;
+    background: white ;
+    border: 2px solid black  ;
+}
+#Container footer{
+    height: 30px;
+    background: gray;
+    text-align: center;
+    border: 3px solid black  ;
+}
+

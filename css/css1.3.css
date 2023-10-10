@@ -1,0 +1,93 @@
+#Container{
+    margin: auto;
+    width: 900px;
+}
+header{
+    font-size: 30px;
+    color: white;
+    background:#ba8b00;
+    height:120px;
+    width: 900px;
+    border: 2px solid black ;
+    text-align: center;
+
+}
+#Container nav{
+    font-size: 30px;
+    color: white;
+    background:gray;
+    height:400px;
+    width: 900px;
+    border: 2px solid black ;
+    text-align: center;
+    margin-top: 30px;
+
+}
+h1{
+    text-align: center;
+}
+#Container #Content {
+    height:550px;
+
+}
+
+#Container #Content #a{
+    width: 180px;
+    height: 220px;
+    background: Gray;
+    margin-right: 60px;
+    float: left;
+
+}
+#Container #Content #b{
+    width: 180px;
+    height: 220px;
+    background: Gray;
+    margin-right: 60px;
+    float: right;
+
+}
+#Container #Content #c{
+    width: 180px;
+    height: 220px;
+    background: Gray;
+    margin-left: 60px;
+    float: left;
+
+}
+#Container #Content #d{
+    width: 180px;
+    height: 220px;
+    background: Gray;
+    margin-right: 60px;
+    float: left;
+    margin-top: 60px;
+
+}
+#Container #Content #e{
+    width: 180px;
+    height: 220px;
+    background: Gray;
+    margin-right: 60px;
+    float: right;
+    margin-top: 60px;
+}
+#Container #Content #f{
+    width: 180px;
+    height: 220px;
+    background: Gray ;
+    margin-left: 60px;
+    float: left;
+    margin-top: 60px;
+}
+#Container footer{
+    width: 900px;
+    height: 120px;
+    background:#0f6674 ;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+
+}
+

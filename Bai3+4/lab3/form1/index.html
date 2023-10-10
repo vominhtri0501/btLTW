@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1 class="heading">Contact us</h1>
+      <div class="form">
+        <div id="control1" class="form-wrap">
+          <label for="fullname">Full name *</label>
+          <input
+            type="text"
+            class="input fullname"
+            id="fullname"
+            required
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div id="control2" class="">
+          <div class="control-email form-wrap">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              class="input email"
+              required
+              id="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <div class="control-password form-wrap">
+            <label for="password">Phone</label>
+            <input
+              type="phone"
+              class="input password"
+              required
+              id="phone"
+              placeholder="Enter Number Phone"
+            />
+          </div>
+        </div>
+
+        <div id="control3" class="form-wrap">
+          <label for="service">Service</label>
+          <select name="service" id="service">
+            <option value="none" selected disabled hidden>Please choose</option>
+
+            <option value="food">Food</option>
+            <option value="drink">Drink</option>
+            <option value="sleep">Sleep</option>
+          </select>
+        </div>
+
+        <div id="control4" class="form-wrap">
+          <label for="message">Message</label>
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Nhập email"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <button class="btn btn-primary">
+          Submit
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
